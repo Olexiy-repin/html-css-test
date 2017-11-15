@@ -1,0 +1,28 @@
+$dark-red: #e74c3c;
+
+// BUTTON
+.button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.button-block--mt {
+  margin-top: 3rem;
+}
+
+.button-block__button {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem 3rem;
+  outline: 1px solid #fff;
+  &:hover {
+    background-color: $dark-red;
+    outline: 1px solid $dark-red;
+  }
+}
+
+.button-block-button--mr {
+  margin-right: 2rem;
+}

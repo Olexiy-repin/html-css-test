@@ -11,7 +11,7 @@ var del = require('del');
 
 // TASK FOR HTML
 gulp.task('html', function(){
-  return gulp.src('./src/html/*.html')
+  return gulp.src('./src/html/index.html')
     .pipe(rigger())
     .pipe(htmlmin({
       collapseWhitespace: true
@@ -36,10 +36,18 @@ gulp.task('css', function(){
       log: true
     }))
     .pipe(cssnano())
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./dist'))
       .pipe(browserSync.reload({
         stream: true
       }));
+});
+
+// TASK FOR FOLDER COMPONENTS
+gulp.task('components', function(){
+  return gulp.src('./src/sass/components/*.scss')
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 // TASK FOR IMAGES
@@ -65,6 +73,7 @@ gulp.task('fonts', function(){
 gulp.task('watch', function(){
   gulp.watch('./src/html/**/*.html', ['html']);
   gulp.watch('./src/sass/**/*.scss', ['css']);
+  gulp.watch('./src/sass/components/*.scss', ['components']);
   gulp.watch('./src/img/**/*.*', ['img']);
   gulp.watch('./src/fonts/**/*.*', ['fonts']);
 });

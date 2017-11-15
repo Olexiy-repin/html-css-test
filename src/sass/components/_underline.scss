@@ -1,0 +1,23 @@
+.underline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline--mb-3 {
+  margin-bottom: 3rem;
+}
+
+.underline__line {
+  height: 1px;
+  width: 5rem;
+  background-color: #fff;
+}
+
+.underline__circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  margin: 0 1rem;
+}
