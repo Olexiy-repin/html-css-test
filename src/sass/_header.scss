@@ -100,5 +100,5 @@ $nav-text-size: 0.875rem;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
-  @include bg-image('img/anchor.svg', 50% 50%, center, no-repeat);
+  @include bg-image('img/anchor.svg', 45% 45%, center, no-repeat);
 }

@@ -53,7 +53,14 @@ gulp.task('components', function(){
 // TASK FOR IMAGES
 gulp.task('img', function(){
   return gulp.src('./src/img/**/*.+(png|gif|svg|jpg)')
-    .pipe(imagemin())
+    .pipe(imagemin(
+      imagemin.svgo({
+        plugins: [
+            {removeViewBox: true},
+            {cleanupIDs: false}
+        ]
+      })
+    ))
     .pipe(gulp.dest('./dist/img'))
       .pipe(browserSync.reload({
         stream: true
