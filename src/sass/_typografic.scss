@@ -1,3 +1,5 @@
+$light-grey: #999999;
+
 // Open Sans Pro fonts
 @font-face {
   font-family: OpenSansR;
@@ -23,4 +25,15 @@
 @font-face {
   font-family: SourceSansProL;
   src: url(fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: SourceSansProB;
+  src: url(fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+}
+
+p {
+  color: $light-grey;
+  line-height: 1.5;
+  margin: 0;
 }

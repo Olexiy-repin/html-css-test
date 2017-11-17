@@ -6,6 +6,10 @@ $dark-red: #e74c3c;
   justify-content: center;
 }
 
+.button-block--flex-start {
+  justify-content: flex-start;
+}
+
 .button-block--mt {
   margin-top: 3rem;
 }
@@ -25,4 +29,8 @@ $dark-red: #e74c3c;
 
 .button-block-button--mr {
   margin-right: 2rem;
+}
+
+.button-block-button--red {
+  background-color: $dark-red;
 }

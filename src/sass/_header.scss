@@ -23,12 +23,12 @@ $nav-text-size: 0.875rem;
 }
 
 .header {
-  @include bg-image('img/header-bg.png', cover, center, no-repeat);
+  @include bg-image('img/header/header-bg.png', cover, center, no-repeat);
   padding-bottom: 13.125rem;
   position: relative;
   z-index: 0;
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('img/header-bg@2x.png');
+    background-image: url('img/header/header-bg@2x.png');
   }
 }
 
@@ -88,6 +88,7 @@ $nav-text-size: 0.875rem;
   font-size: 0.875rem;
   padding: 0 20rem;
   margin: 0;
+  color: #fff;
 }
 
 // ANCHOR LOGO
@@ -100,5 +101,5 @@ $nav-text-size: 0.875rem;
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
-  @include bg-image('img/anchor.svg', 45% 45%, center, no-repeat);
+  @include bg-image('img/header/anchor.svg', 45% 45%, center, no-repeat);
 }

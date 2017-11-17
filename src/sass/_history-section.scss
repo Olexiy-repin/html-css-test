@@ -1,0 +1,46 @@
+$grey: #6a6a6a;
+$red: #e74c3c;
+
+.history-section {
+  padding: 8rem 0;
+  border-bottom: 1px solid $light-grey;
+}
+
+// STYLES FOR MONITOR
+.history-section__img-container {
+  flex-basis: 45%;
+}
+
+.history-section__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+// STYLES FOR ARTICLE
+.history-section__article {
+  flex-basis: 45%;
+}
+
+.history-section__title {
+  display: flex;
+  font-family: SourceSansProB;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  color: $grey;
+  margin: 0 0 2rem 0;
+  &::before {
+    display: block;
+    content: '';
+    border: .2rem solid $red;
+    margin-right: 1.5rem;
+  }
+}
+
+.history-section__paragraph {
+  font-family: SourceSansProR;
+  font-size: 0.875rem;
+  &:first-of-type {
+    margin-bottom: 2rem;
+  }
+}
