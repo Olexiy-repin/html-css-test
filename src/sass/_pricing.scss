@@ -1,0 +1,98 @@
+.pricing-section {
+  padding: 8rem 0;
+  box-sizing: border-box;
+}
+
+.pricing-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-card {
+  flex-basis: 32%;
+  &:hover .pricing-card__icon-title {
+    color: $red;
+  }
+  &:hover .pricing-card__title-container {
+    background-color: $red;
+  }
+  &:hover .button-block__button {
+    background-color: $red;
+  }
+}
+
+// STYLES FOR CARD TITLE
+.pricing-card__title-container {
+  position: relative;
+  background-color: $p-color;
+  padding: 3rem 0 8rem 0;
+  text-align: center;
+  transition: all .5s linear;
+}
+
+.pricing-card__title {
+  font-family: OpenSansS;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+// STYLES FOR ICON IN TITLE
+.pricing-card__icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: $p-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card__icon-title {
+  font-family: SourceSansProB;
+  font-size: 3rem;
+  transition: all .5s linear;
+  margin: 0;
+  &::before {
+    display: inline-block;
+    content: '$';
+  }
+}
+
+.pricing-card__icon-description {
+  display: block;
+  font-family: SourceSansProR;
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+
+// STYLES FOR CARD BODY
+.pricing-card__body {
+  background-color: $icon-bg-color;
+  padding: 7.5rem 0 3rem 0;
+  text-align: center;
+}
+
+.pricing-card__paragraph {
+  line-height: 2.5;
+}
+
+// STYLES FOR BUTTON
+.button-block__button--sm-width {
+  padding: 1rem 2rem;
+  font-size: 0.75rem;
+}
+
+.button-block__button--grey {
+  background-color: $p-color;
+}
+
+.button-block__button--transition {
+  transition: all .5s linear;
+}
