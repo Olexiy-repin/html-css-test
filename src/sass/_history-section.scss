@@ -1,9 +1,5 @@
-$grey: #6a6a6a;
-$red: #e74c3c;
-
 .history-section {
   padding: 8rem 0;
-  border-bottom: 1px solid $light-grey;
 }
 
 // STYLES FOR MONITOR
@@ -32,7 +28,8 @@ $red: #e74c3c;
   &::before {
     display: block;
     content: '';
-    border: .2rem solid $red;
+    width: .3rem;
+    background-color: $red;
     margin-right: 1.5rem;
   }
 }
