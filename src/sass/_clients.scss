@@ -1,0 +1,21 @@
+.clients-section {
+  border-bottom: 1px solid $light-grey;
+  padding: 8rem 0;
+  background-color: $icon-bg-color;
+}
+
+.clients-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.clients-container__client-block {
+  flex-basis: 18%;
+  padding: 3rem 0;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  &:nth-child(n+6) {
+    margin-bottom: 0
+  }
+}
