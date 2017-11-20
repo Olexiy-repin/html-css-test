@@ -1,0 +1,89 @@
+.form-section {
+  padding: 0 0 8rem 0;
+  background-color: $icon-bg-color;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container__contacts {
+  flex-basis: 35%;
+  background-color: #fff;
+  padding: 4rem 4rem;
+  box-sizing: border-box;
+  box-shadow: 0 6px .5rem #e1e2e5;
+}
+
+.form-container__contacts-item {
+  margin-bottom: 2rem;
+  &:last-of-type {
+    margin: 0;
+  }
+}
+
+.form-container__item-title {
+  font-family: SourceSansProS;
+  font-size: 1.5rem;
+  color: $red;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.form-container__paragraph {
+  font-family: OpenSansR;
+  font-size: 1.125rem;
+}
+
+.form-container__form-body {
+  flex-basis: 60%;
+  background-color: #fff;
+  padding: 4rem 6rem;
+  font-family: OpenSansR;
+  font-size: 1.125rem;
+  color: $p-color;
+  box-shadow: 0 6px .5rem #e1e2e5;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  color: $p-color;
+}
+
+%form-item {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $light-grey;
+  box-sizing: border-box;
+  color: $p-color;
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-container__input {
+  @extend %form-item;
+  padding: .8rem 0;
+  margin-bottom: 1rem;
+}
+
+.form-container__textarea {
+  @extend %form-item;
+  resize: none;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-container__button {
+  font-family: OpenSansB;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  background-color: $red;
+  border: none;
+  color: #fff;
+}
