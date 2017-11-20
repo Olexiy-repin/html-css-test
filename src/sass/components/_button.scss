@@ -25,10 +25,16 @@
   }
 }
 
+.button-block__button--open-sasns-b {
+  font-family: OpenSansB;
+  font-size: 0.875rem;
+}
+
 .button-block-button--mr {
   margin-right: 2rem;
 }
 
 .button-block-button--red {
   background-color: $dark-red;
+  outline: none;
 }

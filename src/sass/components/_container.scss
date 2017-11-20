@@ -8,3 +8,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+.container--flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

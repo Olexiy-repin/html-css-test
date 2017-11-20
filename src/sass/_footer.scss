@@ -1,0 +1,62 @@
+.footer-section__promo {
+  background-image: url("img/footer/promo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8rem;
+}
+
+.footer-section__title {
+  font-family: OpenSansR;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0 .5rem 0;
+  font-weight: normal;
+}
+
+.footer-section__title-span {
+  font-family: OpenSansB;
+}
+
+.footer-section__paragraph {
+  font-family: OpenSansR;
+  color: #fff;
+  font-size: 1rem;
+}
+
+// SOCIAL BLOCK
+.footer-section__socials {
+  background-color: $light-black;
+  box-sizing: border-box;
+  padding: 2rem 0;
+}
+
+.footer-section__socials-block {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: space-between;
+}
+
+.footer-section__social-link {
+  display: block;
+  text-decoration: none;
+}
+
+.footer-section__icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+  fill: $p-color;
+  transition: fill .5s linear;
+  &:hover {
+    fill: $red;
+  }
+}
+
+.footer-section__author-description {
+  font-family: OpenSansS;
+  font-size: 0.875rem;
+}
