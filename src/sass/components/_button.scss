@@ -9,25 +9,26 @@
 }
 
 .button-block--mt {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
+}
+
+.button-block--mt-2 {
+  margin-top: 2rem;
 }
 
 .button-block__button {
   display: block;
+  font-family: OpenSansB;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  padding: 1rem 3rem;
+  padding: 1.3rem 3rem;
   outline: 1px solid #fff;
+  font-size: 0.875rem;
   &:hover {
     background-color: $dark-red;
     outline: 1px solid $dark-red;
   }
-}
-
-.button-block__button--open-sasns-b {
-  font-family: OpenSansB;
-  font-size: 0.875rem;
 }
 
 .button-block-button--mr {
