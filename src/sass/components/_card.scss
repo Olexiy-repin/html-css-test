@@ -1,14 +1,21 @@
+$card-title: $grey;
+$card-title--hover: $red;
+$icon: $pink;
+$icon-container: $light-grey;
+$icon-container--hover: $pink;
+$card-underline: $light-grey;
+
 .card-block {
   flex-basis: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   &:hover > .card-block__title {
-    color: $red;
+    color: $card-title--hover;
   }
   &:hover > .icon-container {
     transform: rotate(45deg);
-    outline: 1px solid $pink;
+    outline: 1px solid $icon-container--hover;
   }
   &:hover .icon {
     transform: rotate(-45deg);
@@ -16,7 +23,7 @@
 }
 
 .icon-container {
-  outline: 1px solid $light-grey;
+  outline: 1px solid $icon-container;
   transition: all .5s linear;
   margin-bottom: 1.5rem;
 }
@@ -26,7 +33,7 @@
   width: 4rem;
   height: 4rem;
   padding: 1rem;
-  fill: $pink;
+  fill: $icon;
   transition: all .5s linear;
 }
 
@@ -34,7 +41,7 @@
   font-family: OpenSansS;
   font-size: 1.125rem;
   text-transform: uppercase;
-  color: $grey;
+  color: $card-title;
   transition: all .5s linear;
   margin: 0 0 .5rem 0;
 }
@@ -42,7 +49,7 @@
 .card-block__underline {
   width: 2.5rem;
   height: 2px;
-  background-color: $light-grey;
+  background-color: $card-underline;
   margin: 0 0 .5rem 0;
 }
 

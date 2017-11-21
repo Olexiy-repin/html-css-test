@@ -1,6 +1,6 @@
 .form-section {
   padding: 0 0 8rem 0;
-  background-color: $icon-bg-color;
+  background-color: $dark-white;
 }
 
 .form-container {
@@ -42,13 +42,13 @@
   padding: 4rem 6rem;
   font-family: OpenSansR;
   font-size: 1.125rem;
-  color: $p-color;
+  // color: $p-color;
   box-shadow: 0 6px .5rem #e1e2e5;
   box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
-  color: $p-color;
+  // color: $p-color;
 }
 
 %form-item {
@@ -57,7 +57,7 @@
   border: none;
   border-bottom: 1px solid $light-grey;
   box-sizing: border-box;
-  color: $p-color;
+  color: $dark-grey;
   &:focus {
     outline: none;
   }

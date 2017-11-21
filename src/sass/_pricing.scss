@@ -1,3 +1,10 @@
+$pricing-title-bg: $dark-grey;
+$pricing-title: $white;
+$pricing-icon: $dark-grey;
+$pricing-card-body: $dark-white;
+$pricing-icon-title--hover: $red;
+$pricing-title-container--hover: $red;
+
 .pricing-section {
   padding: 8rem 0;
   box-sizing: border-box;
@@ -11,10 +18,10 @@
 .pricing-card {
   flex-basis: 32%;
   &:hover .pricing-card__icon-title {
-    color: $red;
+    color: $pricing-icon-title--hover;
   }
   &:hover .pricing-card__title-container {
-    background-color: $red;
+    background-color: $pricing-title-container--hover;
   }
   &:hover .button-block__button {
     background-color: $red;
@@ -24,7 +31,7 @@
 // STYLES FOR CARD TITLE
 .pricing-card__title-container {
   position: relative;
-  background-color: $p-color;
+  background-color: $pricing-title-bg;
   padding: 3rem 0 8rem 0;
   text-align: center;
   transition: all .5s linear;
@@ -33,7 +40,7 @@
 .pricing-card__title {
   font-family: OpenSansS;
   font-size: 1.5rem;
-  color: #fff;
+  color: $pricing-title;
   text-transform: uppercase;
 }
 
@@ -47,7 +54,7 @@
   height: 10rem;
   border-radius: 50%;
   background-color: #fff;
-  color: $p-color;
+  color: $pricing-icon;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +81,7 @@
 
 // STYLES FOR CARD BODY
 .pricing-card__body {
-  background-color: $icon-bg-color;
+  background-color: $pricing-card-body;
   padding: 7.5rem 0 3rem 0;
   text-align: center;
 }
@@ -90,7 +97,7 @@
 }
 
 .button-block__button--grey {
-  background-color: $p-color;
+  background-color: $dark-grey;
 }
 
 .button-block__button--transition {

@@ -1,11 +1,11 @@
 .footer-section__promo {
-  background-image: url("img/footer/promo.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  @include bg-image('img/footer/promo.png', cover, center, no-repeat);
   text-align: center;
   box-sizing: border-box;
   padding: 8rem;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url('img/footer/promo@2x.png');
+  }
 }
 
 .footer-section__title {
@@ -49,7 +49,7 @@
   width: 1.5rem;
   height: 1.5rem;
   box-sizing: border-box;
-  fill: $p-color;
+  fill: $dark-grey;
   transition: fill .5s linear;
   &:hover {
     fill: $red;

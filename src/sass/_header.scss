@@ -1,4 +1,5 @@
 $nav-text-size: 0.875rem;
+$menu-link: $red;
 
 @mixin bg-image($path, $size: cover, $pos: center, $repeat: no-repeat) {
   background-image: url($path);
@@ -50,21 +51,21 @@ $nav-text-size: 0.875rem;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: $white;
   padding-bottom: 1rem;
   font-size: $nav-text-size;
   transition: all .2s linear;
   border-bottom: 1px solid transparent;
   &:hover {
-    color: $dark-red;
-    border-bottom: 1px solid $dark-red;
+    color: $menu-link;
+    border-bottom: 1px solid $menu-link;
   }
 }
 
 // TITLE BLOCK
 .header-section{
   text-align: center;
-  color: #fff;
+  color: $white;
 }
 
 .header-section__subtitle {
@@ -87,7 +88,7 @@ $nav-text-size: 0.875rem;
   font-size: 0.875rem;
   padding: 0 20rem;
   margin: 0;
-  color: #fff;
+  color: $white;
 }
 
 // ANCHOR LOGO
@@ -95,7 +96,7 @@ $nav-text-size: 0.875rem;
   position: absolute;
   width: 4rem;
   height: 4rem;
-  background-color: $icon-bg-color;
+  background-color: $dark-white;
   border-radius: 50%;
   left: 50%;
   bottom: 0;
