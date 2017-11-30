@@ -1,27 +1,41 @@
-.underline {
+.underline-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.underline--mb-3 {
   margin-bottom: 3rem;
 }
 
-.underline__line {
-  height: 1px;
-  width: 5rem;
-  background-color: #fff;
-}
-
-.underline__line--black {
-  background-color: #000;
-}
-
-.underline__circle {
+.underline-container__underline {
+  display: block;
+  position: relative;
+  align-items: center;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: #e74c3c;
-  margin: 0 1rem;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(calc(-100% - 1rem),-50%);
+    content: "";
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(calc(100% + 1rem),-50%);
+    content: "";
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+
+.underline--mb-3 {
+  margin-bottom: 3rem;
 }
