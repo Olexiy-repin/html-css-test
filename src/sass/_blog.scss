@@ -57,13 +57,14 @@
   text-transform: uppercase;
   font-family: SourceSansProS;
   font-size: 1.5rem;
-  margin: 0 0 0.8rem 0;
-}
-
-.gallery-container__underline {
-  width: 2.3rem;
-  border: 2px solid #fff;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
+  &::after {
+    display: block;
+    content: "";
+    width: 2.3rem;
+    border: 2px solid #fff;
+    margin-top: 0.8rem;
+  }
 }
 
 .gallery-container__paragraph {
